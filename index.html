@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>REGISTRATION FORM</h2>
+<form align="center" id="for">
+    <input type="text" placeholder="FIRSTNAME" id="fname"> <br> 
+    <input type="text" placeholder="LASTNAME" id="lname"> <br> 
+    <input type="email" placeholder="EMAIL" id="emails"> <br> 
+    <input type="password" placeholder="PASSWARD" id="pass"> <br> 
+    <input type="password" placeholder="CONFIRMPASSWARD" id="compass">
+</form>
+
+
+
+<button onclick="myfunction()">SUBMIT</button>
+    <script>
+        let store = []
+        function myfunction(){
+        let obj = {
+            fname: document.getElementById("fname").value,
+            lname: document.getElementById("lname").value,
+            email:document.getElementById("emails").value,
+            passward:document.getElementById("pass").value,
+            confirmpassward:document.getElementById("compass").value,
+        }   
+         store.push(obj)
+         console.log(store)
+        }
+        
+
+    </script>
+</body>
+</html>
